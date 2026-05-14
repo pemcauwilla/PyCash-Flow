@@ -1,0 +1,58 @@
+/* ----- EXPENSE ITEM ----- */
+QFrame[class="expense_item"] {
+    background-color: transparent; 
+    border-bottom: 1px solid @GLASS_BORDER; 
+}
+
+QFrame[class="expense_item"]:hover {
+    background-color: @GLASS_HOVER; 
+}
+
+QFrame[class="exp_color_dot"] {
+    border-radius: 5px;
+}
+
+/* ----- TEXT ----- */
+QLabel[class="exp_title_lbl"] {
+    color: @TEXT_SECONDARY;
+    font-size: 13px;
+}
+
+QLabel[class="exp_amount_lbl"] {
+    color: @TEXT_PRIMARY;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ----- BUTTONS ----- */
+QPushButton[class="exp_delete_btn"] {
+    background-color: transparent;
+    border: none;
+    color: @TEXT_SECONDARY; 
+    font-size: 16px;
+    font-weight: normal;
+    padding: 4px;
+}
+
+QPushButton[class="exp_delete_btn"]:hover {
+    color: @ACCENT_PINK; 
+    background-color: @GLASS_HOVER;
+    border-radius: 4px;
+}
+
+QPushButton[class="exp_edit_btn"] {
+    background-color: transparent;
+    border: none;
+    color: @TEXT_SECONDARY; 
+    padding: 4px; 
+}
+
+QPushButton[class="exp_edit_btn"]:hover {
+    color: @ACCENT_CYAN; 
+    background-color: @GLASS_HOVER;
+    border-radius: 4px;
+}
+
+QPushButton[class="exp_delete_btn"]:pressed, QPushButton[class="exp_edit_btn"]:pressed {
+    background-color: @BTN_PRESSED_GLASS;
+}

@@ -1,0 +1,68 @@
+/* -------- SCROLL AREA --------- */
+QScrollArea, QWidget[class="exp_scroll_widget"] {
+    background-color: transparent;
+    border: none;
+}
+
+QLineEdit {
+    background-color: @INPUT_BG; 
+    border: 1px solid @GLASS_BORDER; 
+    border-radius: 16px; 
+    color: @TEXT_PRIMARY; 
+    padding: 8px 16px; 
+    font-size: 13px;
+}
+
+QLineEdit:focus {
+    border: 1px solid @ACCENT_CYAN; 
+    background-color: @INPUT_BG;
+}
+
+QPushButton[class="add_btn"] {
+    background-color: @GLASS_BG; 
+    border: 1px solid @GLASS_BORDER;
+    border-radius: 10px; 
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 20px;
+}
+
+QPushButton[class="add_btn"]:hover {
+    background-color: @ACCENT_CYAN; 
+    color: @TEXT_BLACK;
+    border: none; 
+}
+
+QPushButton[class="add_btn"]:pressed {
+    background-color: @BTN_PRESSED_CYAN;
+}
+
+/* ---------  SCROLL BAR ----------- */
+QScrollBar:vertical {
+    border: none;
+    background-color: transparent; 
+    width: 10px; 
+}
+
+QScrollBar::handle:vertical {
+    background-color: @SBAR_HANDLE_VERTICAL;
+    border-radius: 5px; 
+    min-height: 30px; 
+}
+
+QScrollBar::handle:vertical:hover {
+    background-color: @HOVER_SBAR_HANDLE_VERTICAL; 
+}
+
+QScrollBar::add-line:vertical, 
+QScrollBar::sub-line:vertical {
+    height: 0px; 
+    border: none;
+    background: none;
+}
+
+QScrollBar::add-page:vertical, 
+QScrollBar::sub-page:vertical {
+    background: none;
+}
+

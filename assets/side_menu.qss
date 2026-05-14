@@ -1,0 +1,22 @@
+QFrame[class="side_menu"] {
+    background-color: transparent; 
+    border-right: 1px solid @SIDE_MENU_BORDER; 
+}
+
+QPushButton[class="side_menu_icon_btn"] {
+    background-color: transparent;
+    color: @TEXT_SECONDARY; 
+    border: none;
+    border-radius: 6px;
+    padding: 16px;
+}
+
+QPushButton[class="side_menu_icon_btn"]:hover {
+    background-color: @GLASS_HOVER;
+    color: @TEXT_PRIMARY;
+}
+
+QPushButton[objectName="active_tab"] {
+    color: @ACCENT_CYAN; 
+    background-color: transparent;
+}

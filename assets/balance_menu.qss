@@ -1,0 +1,11 @@
+QLabel[class="card_title"] {
+    color: @TEXT_SECONDARY; 
+    font-size: 16px;
+    font-weight: normal;
+}
+
+QLabel[class="card_value"] {
+    color: @TEXT_PRIMARY;
+    font-size: 28px; 
+    font-weight: bold;
+}

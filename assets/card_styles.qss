@@ -1,0 +1,18 @@
+/* ---------------- CARD ---------------- */
+QFrame[class="glass_card"] {
+    background-color: @GLASS_BG;
+    border: 1px solid @GLASS_BORDER;
+    border-radius: 16px;
+}
+
+QFrame[class="glass_card"]:hover {
+    border: 1px solid @GLASS_BORDER_HOVER;
+}
+
+QFrame[class="glass_card"] QLabel {
+    color: @TEXT_PRIMARY;
+}
+
+
+
+
